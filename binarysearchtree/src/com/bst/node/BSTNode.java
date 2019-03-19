@@ -1,49 +1,45 @@
 package com.bst.node;
 
-public class BSTNode<T> {
+public class BSTNode {
 
-	private T data;
-	private T left;
-	private T right;
-	
-	public BSTNode(T data) {
+	private String data;
+	private BSTNode left;
+	private BSTNode right;
+
+	public BSTNode(String data) {
 		this.data = data;
 		this.left = null;
 		this.right = null;
 	}
-	
-	public BSTNode(T data, T left, T right) {
+
+	public BSTNode(String data, BSTNode left, BSTNode right) {
 		this.data = data;
 		this.left = left;
 		this.right = right;
 	}
 
-	public T getData() {
+	public String getData() {
 		return data;
 	}
 
-	public void setData(T data) {
+	public void setData(String data) {
 		this.data = data;
 	}
 
-	public T getLeft() {
+	public BSTNode getLeft() {
 		return left;
 	}
 
-	public void setLeft(T left) {
+	public void setLeft(BSTNode left) {
 		this.left = left;
 	}
 
-	public T getRight() {
+	public BSTNode getRight() {
 		return right;
 	}
 
-	public void setRight(T right) {
+	public void setRight(BSTNode right) {
 		this.right = right;
 	}
-	
-	
-	
-	
 
 }
